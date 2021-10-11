@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    color: #05386b;
+
+}
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-color: #379683;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#navbar ul {
+    width: 40%;
+}
+#navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+
+}
+#navbar ul li a {
+    text-decoration: none;
+    margin-left:60px;
+    font-size: 1.1em;
+    color: #edf5e1;
+    padding: 5px 5px;
+}
+#navbar ul li a:hover {
+    border-bottom: 1px solid #edf5e1;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #379683;
+
+}
+
+#welcome-section h1, #contact h2 {
+    display: block;
+    font-size: 5em;
+}
+#welcome-section p{
+    display: block;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: lighter;
+    color: #edf5e1;
+}
+
+#projects {
+    background-color: #05386b;
+    padding: 0 20px;
+
+}
+
+#projects h2 {
+    padding: 80px 0 10px 0;
+    font-size: 2.5em;
+    color: #edf5e1;
+   max-width: 640px;
+   border-bottom: 2px solid #edf5e1;
+   margin: 0 auto 6rem auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 15px;
+    width: 100%;
+    max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+img {
+    display: block;
+    width: 100%;
+}
+.projects-grid a {
+  text-decoration:none;
+}
+.project {
+ text-align: center;
+ margin: 20px 0;
+ box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+}
+.p-title {
+    font-size: 17px;
+    padding: 20px 0.5rem;
+    background-color: #5cdb95;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .project-image {
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #contact {
+    text-align: center;
+    margin: 0 auto;
+    height: 50vh;
+  }
+
+  #contact p {
+      font-size: 1.6em;
+      font-style: italic;
+      font-weight: 100;
+      padding: 10px 0;
+  }
+
+  .contact-links {
+      display: flex;
+      justify-content: space-evenly;    
+      width: 80%;
+      margin: 0 auto;
+      padding: 15px 0;
+  }
+  .contact-links a {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 1.8em;
+      color: #05386b;
+      margin-top: 20px;
+  }
+  .contact-details {
+    text-shadow: 0 0 2px #05386b;
+    transition: transform 0.3s ease-out;
+  }
+  .contact-details:hover {
+    transform: translateY(8px);
+  }
+
+  footer{
+      display: flex;
+      justify-content: space-around;
+      padding: 30px 0;
+      border-top: 2px solid #05386b;
+      background-color: #5cdb95;
+      color: #05386b;
+  }
+
+  .fa-heart {
+      color: red;
+  }
+
+.code {
+  color: #5cdb95;
+  font-size: 1.2em;
+}
+
+/* when hover on project, only the .code color will change */
+.project:hover .code {
+  color: #ff7f50;
+}
+
+@media screen and (max-width: 600px) {
+  #contact h2{
+      font-size:2em;
+  }
+  
+  #contact p {
+      font-size: 1em;
+  }
+  
+  .contact-links a {
+    font-size: 0.9em;
+    padding: 5px;
+  }
+  
+  footer{
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto;
+    font-size: 0.em;
+  }
+  
+  #welcome-section h1 {
+    font-size:2em;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+  #projects h2{
+  padding-top:180px;
+  }
+}
